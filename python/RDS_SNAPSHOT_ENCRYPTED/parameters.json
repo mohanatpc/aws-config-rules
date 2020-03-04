@@ -1,0 +1,12 @@
+{
+  "Version": "1.0",
+  "Parameters": {
+    "RuleName": "RDS_SNAPSHOT_ENCRYPTED",
+    "SourceRuntime": "python3.6-lib",
+    "CodeKey": "RDS_SNAPSHOT_ENCRYPTED.zip",
+    "InputParameters": "{}",
+    "OptionalParameters": "{}",
+    "SourceEvents": "AWS::RDS::DBSnapshot"
+  },
+  "Tags": "[]"
+}
