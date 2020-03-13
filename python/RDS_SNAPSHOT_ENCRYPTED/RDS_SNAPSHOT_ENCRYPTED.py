@@ -64,7 +64,6 @@ class RDS_SNAPSHOT_ENCRYPTED(ConfigRule):
 
     def evaluate_change(self, event, client_factory, configuration_item, valid_rule_parameters):
         encryption_enabled = configuration_item['configuration'].get('encrypted')
-        # print("Rule Parameters : "+str(valid_rule_parameters))
         if encryption_enabled:
             if valid_rule_parameters and valid_rule_parameters.get("kmsKeyId"):
                 rds_kms_keyid = configuration_item['configuration'].get('kmsKeyId')
